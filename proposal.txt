@@ -1,0 +1,7 @@
+Miles Roberts (solo)
+
+Custom Project:
+I am writing a 3D graphics engine that projects a three-dimensional object onto a two-dimensional screen. An array of points is generated based off of a given equation (such as r^2 = x^2 + y^2 + z^2 for a sphere). Each point contains an x, y, and z coordinate. The screen is thought of like a camera at a position in space with its own x, y, z position. This camera position can be translated in any direction based off of user input. When I came up with this concept, I figured that if a point is at some angle from the camera's direction and within the camera's field of view, the angle should correspond to its position on screen, such as a leftward angle appearing on the left side of the screen. The same concept is also applied to the angle in the vertical direction. The exact maths involved are as follows:
+
+x position on screen = arctan(change in z / change in x)
+y position on screen = arctan(change in y / sqrt((change in x) ^ 2 + (change in z) ^ 2))
